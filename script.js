@@ -16,9 +16,9 @@ const searchWeather = function(location) {
             console.log(res);
             console.log((res.forecast.forecastday[4].date).substring(5));
             const forecastDate = new Date(res.forecast.forecastday[4].date);
-            console.log(forecastDate)
             const foreTest = forecastDate.getDay();
             const dayNames = ['Sunday', 'Mondayy', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+            const shortNames = dayName.split(0,3)''
             console.log(dayNames[foreTest]);
         })
         .catch(function(err){

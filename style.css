@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.information-container{
+    margin: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.forecast-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.forecast-card{
+    background-color: rgba(128, 128, 128, 0.377);
+    aspect-ratio: 1;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.425);
+}
+
+.forecast-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    flex:1;
+
+    >span:first-child{
+        font-weight: 700;
+    }
+
+    >span:nth-child(2){
+        font-size: 1.15rem;
+    }
+}
+
+.low-to-high{
+    display: flex;
+    justify-content: center;
+    gap:.75rem;
+    align-items: center;
+    margin-top: -1rem;
+    flex: 1;
+    width: 60%;
+
+    >span:not(:nth-child(2)){
+        font-size: 1.5rem;
+    }
+
+    >span:nth-child(2){
+        font-size: 1.5rem;
+        margin-top: -.2rem;
+    }
+}
+
+.bottom-forecast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -1rem;
+    flex: 2;
+    width: 100%;
+
+    >img{
+        height: 75px;
+        aspect-ratio: 1;
+        margin-left: -.5rem;
+        
+    }
+}
+
+.rain-chance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    aspect-ratio: 1;
+
+    >span:first-child{
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: -.25rem;
+    }
+}
+
+.hourly-weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6rem;
+    border-radius: 10px;
+    background-color: rgba(68, 47, 47, 0.582);
+    box-shadow: 0 3px 3px 3px rgba(68, 47, 47, 0.849);
+}
+
+.current-weather{
+    display: flex;
+    gap: 1rem;
+}

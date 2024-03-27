@@ -34,6 +34,7 @@ const generateCurrentWeather = function(today, location){
     console.log(today)
     console.log(location)
     const currentWeatherDiv = document.querySelector('.current-weather');
+    console.log(currentWeatherDiv.textContent)
     
     
     
